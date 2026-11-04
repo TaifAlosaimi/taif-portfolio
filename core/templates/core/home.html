@@ -1,0 +1,117 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+<header class="site-header" aria-label="Main navigation">
+  <a class="brand-mark" href="#hero" aria-label="Taif Alosaimi home">
+    <img src="{% static 'images/brand/ta-monogram-circle.png' %}" alt="">
+  </a>
+  <nav class="desktop-nav">
+    <a href="#about" data-en="About" data-ar="نبذة">About</a>
+    <a href="#tracks" data-en="Tracks" data-ar="المسارات">Tracks</a>
+    <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+    <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+  </nav>
+  <button class="language-toggle" type="button" aria-label="Switch language"><span>EN</span><i></i><span>AR</span></button>
+</header>
+
+<main id="main-content">
+  <section class="hero" id="hero" aria-label="Introduction">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+      poster="{% static 'images/hero/space-poster.jpg' %}">
+      <source src="{% static 'images/hero/space-loop.mp4' %}" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-kicker" data-en="Welcome to" data-ar="حياك الله !">Welcome to</p>
+      <h1 class="hero-name"><span class="hero-name-script">Taif Alosaimi</span></h1>
+      <p class="hero-subtitle"data-en="PORTFOLIO" data-ar="في ملف أعمالي">PORTFOLIO</p>
+    </div>
+    <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+      <span data-en="SCROLL" data-ar="اكتشف">SCROLL</span><i></i>
+    </a>
+    <span class="hero-index">01 / 05</span>
+  </section>
+
+  <section class="about-section section-shell" id="about">
+    <div class="about-copy panel-plum reveal">
+      <div class="section-index"><span>02</span><i></i><span data-en="ABOUT ME" data-ar="نبذة عني">ABOUT ME</span></div>
+      <p class="eyebrow" data-en="PHYSICS-MINDED · SOFTWARE BUILDER" data-ar="عقلية فيزيائية · صانعة حلول برمجية">PHYSICS-MINDED · SOFTWARE BUILDER</p>
+      <h2 class="section-heading"><span data-en="ABOUT" data-ar="عن">ABOUT</span> <em data-en="me" data-ar="طيف">me</em></h2>
+      <div class="about-body">
+        <p data-en="From participating in hackathons and working on diverse projects to becoming a Software Engineer and Developer, I found in programming a space where logic meets creativity — a space where I turn ideas into real applications and meaningful experiences."
+           data-ar="من طالبة شاركت في هاكاثونات ومشاريع متعددة، إلى مهندسة ومطوّرة برمجيات وجدت في البرمجة مساحة تجمع بين المنطق والإبداع؛ مساحة أحوّل فيها الأفكار إلى تطبيقات وتجارب حقيقية.">
+          From participating in hackathons and working on diverse projects to becoming a Software Engineer and Developer, I found in programming a space where logic meets creativity — a space where I turn ideas into real applications and meaningful experiences.
+        </p>
+        <p data-en="My passion for physics began in childhood. My academic background shaped the way I think, strengthening my analytical mindset, problem-solving abilities, and perspective on complex challenges."
+           data-ar="بدأ شغفي بالفيزياء منذ الطفولة، وشكّلت خلفيتي الأكاديمية طريقة تفكيري، وعززت قدرتي على التحليل وحل المشكلات والنظر إلى التحديات من زوايا مختلفة.">
+          My passion for physics began in childhood. My academic background shaped the way I think, strengthening my analytical mindset, problem-solving abilities, and perspective on complex challenges.
+        </p>
+        <p data-en="Today, I find my passion in Software Engineering — driven by the desire to keep learning, explore new challenges, and grow with every solution I build."
+           data-ar="واليوم، لقيت شغفي في هندسة البرمجيات؛ مدفوعة برغبة مستمرة في التعلم، وخوض تجارب جديدة، وتطوير مهاراتي مع كل حل أبنيه.">
+          Today, I find my passion in Software Engineering — driven by the desire to keep learning, explore new challenges, and grow with every solution I build.
+        </p>
+      </div>
+      <div class="about-actions">
+        <a class="pill-button pill-light" href="{% static 'files/taif-alosaimi-cv.pdf' %}" target="_blank" rel="noopener">
+          <span class="button-icon">↓</span><span data-en="VIEW CV" data-ar="السيرة الذاتية">VIEW CV</span>
+        </a>
+        <a class="pill-button pill-outline" href="#contact"><span class="button-dot"></span><span data-en="GET IN TOUCH" data-ar="تواصلوا معي">GET IN TOUCH</span></a>
+      </div>
+      <div class="motto"><span>BUILD&nbsp; / &nbsp;LEARN&nbsp; / &nbsp;EXPLORE&nbsp; / &nbsp;CREATE</span></div>
+    </div>
+    <div class="about-art reveal">
+      <img src="{% static 'images/brand/ta-monogram.png' %}" alt="TA monogram embossed on textured paper">
+    </div>
+  </section>
+
+  <section class="tracks-section section-shell" id="tracks">
+    <div class="section-topline"><span>03</span><i></i><span data-en="AREAS I WORK IN" data-ar="مجالات عملت عليها">AREAS I WORK IN</span></div>
+    <div class="tracks-intro reveal">
+      <div>
+        <p class="eyebrow" data-en="CURIOSITY IN MOTION" data-ar="فضول يتحوّل إلى عمل">CURIOSITY IN MOTION</p>
+        <h2 class="tracks-title"><span class="tracks-number">04</span><span data-en="TRACKS" data-ar="مسارات">TRACKS</span></h2>
+      </div>
+      <p class="tracks-description" data-en="A selection of disciplines shaped by the projects I have worked on and the problems I enjoy solving."
+         data-ar="مجالات تعكس المشاريع التي عملت عليها، والتحديات التي أستمتع بتحويلها إلى حلول.">
+        A selection of disciplines shaped by the projects I have worked on and the problems I enjoy solving.
+      </p>
+    </div>
+    <div class="tracks-grid">
+      <article class="track-item reveal"><span class="track-number">01</span><div><h3 data-en="Software Engineering" data-ar="هندسة البرمجيات">Software Engineering</h3><p data-en="Designing and building reliable digital solutions." data-ar="تصميم وبناء حلول رقمية موثوقة.">Designing and building reliable digital solutions.</p></div></article>
+      <article class="track-item reveal"><span class="track-number">02</span><div><h3 data-en="AI & Intelligent Systems" data-ar="الذكاء الاصطناعي والأنظمة الذكية">AI &amp; Intelligent Systems</h3><p data-en="Exploring intelligent experiences and language technologies." data-ar="استكشاف التجارب الذكية وتقنيات اللغة.">Exploring intelligent experiences and language technologies.</p></div></article>
+      <article class="track-item reveal"><span class="track-number">03</span><div><h3 data-en="Innovation & Prototyping" data-ar="الابتكار وبناء النماذج الأولية">Innovation &amp; Prototyping</h3><p data-en="Turning early ideas into testable concepts." data-ar="تحويل الأفكار الأولية إلى نماذج قابلة للتجربة.">Turning early ideas into testable concepts.</p></div></article>
+      <article class="track-item reveal"><span class="track-number">04</span><div><h3 data-en="Web Development" data-ar="تطوير الويب">Web Development</h3><p data-en="Creating responsive, user-focused web applications." data-ar="بناء تطبيقات ويب متجاوبة تتمحور حول المستخدم.">Creating responsive, user-focused web applications.</p></div></article>
+    </div>
+    <div class="tracks-footer"><span>BUILD / LEARN / EXPLORE / CREATE</span><i></i></div>
+  </section>
+
+  <section class="projects-section section-shell" id="projects">
+    <div class="section-topline"><span>04</span><i></i><span data-en="SELECTED WORK" data-ar="أعمال مختارة">SELECTED WORK</span></div>
+    <div class="projects-heading reveal">
+      <div><p class="eyebrow" data-en="IDEAS INTO REALITY" data-ar="من الفكرة إلى الواقع">IDEAS INTO REALITY</p><h2 data-en="Selected" data-ar="مختارات">Selected</h2><h2 class="projects-script" data-en="projects." data-ar="من أعمالي.">projects.</h2></div>
+      <p data-en="A closer look at projects, experiments, and ideas brought to life."
+         data-ar="نظرة أقرب على مشاريع وتجارب وأفكار تحوّلت إلى واقع.">A closer look at projects, experiments, and ideas brought to life.</p>
+    </div>
+    <div class="project-timeline" id="project-list" aria-live="polite">
+      <div class="projects-loading" data-en="Loading projects…" data-ar="جارٍ تحميل المشاريع…">Loading projects…</div>
+    </div>
+    <noscript><p class="projects-fallback">JavaScript is required to load the project gallery.</p></noscript>
+  </section>
+
+  <section class="contact-section section-shell" id="contact">
+    <div class="section-topline"><span>05</span><i></i><span data-en="CONTACT" data-ar="تواصل">CONTACT</span></div>
+    <div class="contact-content reveal">
+      <p class="eyebrow" data-en="OPEN TO OPPORTUNITIES" data-ar="منفتحة على الفرص">OPEN TO OPPORTUNITIES</p>
+      <h2><span data-en="LET’S" data-ar="لنتواصل">LET’S</span><em data-en="connect." data-ar="معًا.">connect.</em></h2>
+      <p class="contact-lead" data-en="Have a question, opportunity, or idea in mind? I’d love to hear from you."
+         data-ar="عندك سؤال أو فرصة أو فكرة؟ يسعدني أسمع منك.">Have a question, opportunity, or idea in mind? I’d love to hear from you.</p>
+      <div class="contact-links">
+        <a class="contact-card" href="mailto:taif7falibrahim@gmail.com"><span class="contact-icon">✉</span><span class="contact-card-copy"><strong data-en="Email" data-ar="البريد الإلكتروني">Email</strong><small>taif7falibrahim@gmail.com</small></span><span class="contact-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+        <a class="contact-card" href="https://www.linkedin.com/in/taif-f-alosaimi-47886a2a0" target="_blank" rel="noopener noreferrer"><span class="contact-icon linkedin-glyph">in</span><span class="contact-card-copy"><strong>LinkedIn</strong><small data-en="Let’s connect" data-ar="لنتواصل مهنيًا">Let’s connect</small></span><span class="contact-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+        <a class="contact-card" href="https://github.com/TaifAlosaimi" target="_blank" rel="noopener noreferrer"><span class="contact-icon github-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.08c-3.1.67-3.76-1.31-3.76-1.31-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.23-5.1 5.51.4.35.76 1.03.76 2.08V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/></svg></span><span class="contact-card-copy"><strong>GitHub</strong><small data-en="View my work" data-ar="اطّلع على أعمالي">View my work</small></span><span class="contact-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+      </div>
+    </div>
+    <div class="contact-footer"><span>BUILD / LEARN / EXPLORE / CREATE</span><i></i><small>© <span id="current-year"></span> TAIF ALOSAIMI</small></div>
+  </section>
+</main>
+{% endblock %}
