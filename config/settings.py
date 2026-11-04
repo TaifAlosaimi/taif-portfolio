@@ -21,14 +21,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 import os
+from pathlib import Path
 
-if os.path.exists(Path.home() / '.django_secret_key'):
-    SECRET_KEY = (Path.home() / '.django_secret_key').read_text().strip()
-else:
-    SECRET_KEY = '3+6oh_$qtkl^eo6763nzu#@*tz6qrq^u=c7svy-sie2z&lf8pa'
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', 'True').lower() == 'true'
+BASE_DIR = Path(__file__).resolve().parent.parent
 
+SECRET_KEY_FILE = BASE_DIR / "secret_key.txt"
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
+if not SECRET_KEY:
+    SECRET_KEY = SECRET_KEY_FILE.read_text().strip()
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
