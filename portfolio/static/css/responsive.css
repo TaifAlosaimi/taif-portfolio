@@ -1,0 +1,118 @@
+@media (max-width: 900px) {
+  .about-section { grid-template-columns: 1fr 1fr; }
+  .about-copy { padding: 34px 28px 25px; }
+  .about-art { min-height: 570px; }
+  .contact-links { grid-template-columns: 1fr; }
+  .contact-card { max-width: 520px; }
+  .contact-lead { white-space: normal; }
+}
+@media (max-width: 680px) {
+  :root { --page-gutter: 12px; }
+  html { scroll-padding-top: 65px; }
+  .site-header { height: 62px; }
+  .desktop-nav { gap: 13px; margin-right: 12px; }
+  .desktop-nav a { font-size: 8px; letter-spacing: .08em; }
+  .brand-mark { font-size: 23px; }
+  .language-toggle { padding: 8px 9px; gap: 6px; font-size: 9px; }
+  .hero { min-height: 570px; height: 88svh; }
+  .hero-name-serif { font-size: clamp(57px, 15vw, 90px); }
+  .hero-name-script { font-size: clamp(70px, 18vw, 108px); }
+  .hero-kicker { font-size: 13px; }
+  .hero-subtitle { font-size: 9px; }
+  .hero-index { display: none; }
+  .about-section { grid-template-columns: 1fr; }
+  .about-copy { min-height: 560px; padding: 32px 25px 24px; }
+  .about-art { min-height: 380px; }
+  .about-art img { width: min(68%, 300px); }
+  .section-heading { font-size: 54px; }
+  .about-body { font-size: 14px; }
+  .tracks-section, .projects-section, .contact-section { padding-left: 22px; padding-right: 22px; }
+  .tracks-intro, .projects-heading { display: block; padding-top: 55px; }
+  .tracks-description, .projects-heading > p { margin-top: 22px; }
+  .tracks-title { gap: 12px; }
+  .tracks-number { font-size: 92px; }
+  .track-item { grid-template-columns: 32px minmax(0, 1fr); gap: 10px; padding: 18px 0; }
+  .track-item h3 { font-size: 23px; }
+  .track-item p { font-size: 12px; }
+  .projects-heading h2 { font-size: 66px; }
+  .projects-heading .projects-script { font-size: 78px; }
+  .project-timeline { padding-left: 45px; }
+  .project-timeline::before { left: 13px; }
+  .timeline-marker { left: -45px; width: 29px; height: 29px; font-size: 8px; }
+  .project-entry { padding-left: 0; margin-bottom: 75px; }
+  .project-title { font-size: 42px; }
+  .project-description { font-size: 15px; }
+  .project-images, .project-entry-reverse .project-images { grid-template-columns: 1fr; }
+  .project-image-frame img, .project-image-2 img { height: auto; max-height: 440px; min-height: 220px; object-fit: contain; background: #e5ded5; }
+  .project-entry-reverse .project-image-1, .project-entry-reverse .project-image-2 { order: initial; margin-top: 0; }
+  .contact-content { padding-top: 60px; }
+  .contact-content h2 { font-size: 92px; }
+  .contact-content h2 em { font-size: 105px; }
+  .contact-lead { max-width: 100%; font-size: 16px; white-space: normal; }
+  .contact-footer { flex-wrap: wrap; }
+  .contact-footer i { min-width: 35px; }
+  .is-arabic .project-timeline { padding-left: 0; padding-right: 45px; }
+  .is-arabic .project-timeline::before { left: auto; right: 13px; }
+  .is-arabic .timeline-marker { left: auto; right: -45px; }
+}
+@media (max-width: 390px) {
+  .desktop-nav { gap: 8px; margin-right: 7px; }
+  .desktop-nav a { font-size: 7px; }
+  .language-toggle { padding: 7px; gap: 4px; }
+  .about-actions { gap: 8px; }
+  .pill-button { padding: 0 16px; font-size: 9px; }
+  .hero-name-serif { font-size: 55px; }
+  .hero-name-script { font-size: 68px; }
+  .contact-content h2 { font-size: 78px; }
+  .contact-content h2 em { font-size: 88px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+
+@media (max-width: 480px) {
+  .site-header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .desktop-nav {
+    gap: 7px;
+    margin-right: 7px;
+  }
+  .desktop-nav a {
+    font-size: 7px;
+    letter-spacing: .04em;
+  }
+  .language-toggle {
+    padding: 7px 6px;
+    gap: 4px;
+    font-size: 8px;
+  }
+  .contact-links {
+    gap: 9px;
+  }
+  .contact-card {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .desktop-nav {
+    gap: 5px;
+    margin-right: 5px;
+  }
+  .desktop-nav a {
+    font-size: 6.5px;
+  }
+  .brand-mark {
+    font-size: 21px;
+  }
+  .language-toggle {
+    padding: 6px 5px;
+    gap: 3px;
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,23 @@
+{% load static %}
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211015">
+  <meta name="description" content="Taif Alosaimi — Software Engineer and Full Stack Developer.">
+  <title>Taif Alosaimi — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+Pro:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  <script defer src="{% static 'js/language.js' %}"></script>
+  <script defer src="{% static 'js/projects.js' %}"></script>
+  <script defer src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-en="Skip to content" data-ar="تجاوز إلى المحتوى">Skip to content</a>
+  {% block content %}{% endblock %}
+</body>
+</html>
